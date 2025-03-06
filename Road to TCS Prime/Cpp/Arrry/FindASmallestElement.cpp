@@ -30,7 +30,7 @@ void OutputMinFunc(int arr[],int size){
     //     cout<<arr[i]<<" ";
     // }
     cout<<endl;
-    sort(arr,arr + size);
+    sort(arr,arr + size); /* Sort the array from 1st element to last element*/
     // for(int i=0; i<size; i++){
     //     cout<<arr[i]<<" ";
     // }
