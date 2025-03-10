@@ -29,17 +29,20 @@ void OutputMinFunc(int arr[],int size){
     // for(int i=0; i<size; i++){
     //     cout<<arr[i]<<" ";
     // }
-    cout<<endl;
-    sort(arr,arr + size); /* Sort the array from 1st element to last element*/
-    // for(int i=0; i<size; i++){
-    //     cout<<arr[i]<<" ";
-    // }
-    cout<<endl;
-    int min,max;
-    min = arr[0];
-    max = arr[size-1];
-    cout<<"Smallest element "<<min<<endl;
-    cout<<"Largest element "<<max<<endl;
+    if (size==0 || size==1){
+        cout<<-1<<endl;
+    }
+    else{
+        sort(arr,arr + size); /* Sort the array from 1st element to last element*/
+        // for(int i=0; i<size; i++){
+        //     cout<<arr[i]<<" ";
+        // }
+        int min,max;
+        min = arr[0];
+        max = arr[size-1];
+        cout<<"Smallest element "<<min<<endl;
+        cout<<"Largest element "<<max<<endl;
+    } 
 }
 /*Approach 2 using vector and size() method*/ 
 
