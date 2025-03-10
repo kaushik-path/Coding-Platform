@@ -2,22 +2,22 @@
 using namespace std;
 
 bool IsStringPal(string Str){
-    int left=0, right= Str.length()-1;
+    int left= Str[0], right= Str.length()-1;
     while(left<right){
-        while(left == right){
+        if(left == right){
             left++;
             right++;
         }
         else{
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 int main(){
-    string Str = "ABCDCBA";
-    // cin>>Str;
+    string Str;
+    cin>>Str;
     bool ans = IsStringPal(Str);
 
     if (ans == true){
