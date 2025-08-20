@@ -17,8 +17,8 @@
 #     this-is-a-string
 
 def SplitAndJoin(S):
-    S = S.split(" ")  #its convert the String into list
-    S = "-".join(S)
+    S = S.split(" ")  #its convert the String into list separate all the element which have space in between
+    S = "-".join(S) # and joins with -
     return S
 
 Str= str(input())
