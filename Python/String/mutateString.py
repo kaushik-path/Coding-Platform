@@ -23,9 +23,9 @@
 #     abrackdabra
 
 def MutateSting(Str, N, Char):
-    l = list(Str)
-    l[N] = Char
-    Str = ''.join(l)
+    l = list(Str) # l is a list which stores Str element
+    l[N] = Char # put char in l nth position
+    Str = ''.join(l) # joins all the l element in one string
     return Str
 
 Str = str(input())
