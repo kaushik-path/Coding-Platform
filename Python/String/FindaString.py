@@ -7,11 +7,11 @@
     # 2
 
 def Find_a_String(s1, s2):
-    l1 = len(s1)
-    l2 = len(s2)
+    l1 = len(s1) # 7
+    l2 = len(s2) # 3
     Count = 0
-    for i in range(l1-l2+1):
-        if s1[i:i+l2]== s2:
+    for i in range(l1-l2+1):  # range(7-3+1)
+        if s1[i:i+l2]== s2:   # slice [0 -> 3, 3 is not counted]
             Count+=1
     return Count
 
