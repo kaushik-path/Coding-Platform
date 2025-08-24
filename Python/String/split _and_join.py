@@ -12,11 +12,11 @@
 # The one line contains a string consisting of space separated words.
 
 # Sample Input
-#     this is a string   
+#     this is a string [this,is,a,string]   
 # Sample Output
 #     this-is-a-string
 
-def SplitAndJoin(S):
+def SplitAndJoin(S): #void/int/bool
     S = S.split(" ")  #its convert the String into list separate all the element which have space in between
     S = "-".join(S) # and joins with -
     return S
